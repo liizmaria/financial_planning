@@ -115,6 +115,7 @@ class MCSimulation:
     
             # Calculate the normalized, cumulative return series
             portfolio_cumulative_returns[n] = (1 + sim_df.fillna(0)).cumprod()
+    
         
         # Set attribute to use in plotting
         self.simulated_return = portfolio_cumulative_returns
